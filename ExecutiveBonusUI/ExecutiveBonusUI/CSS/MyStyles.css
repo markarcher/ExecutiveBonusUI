@@ -1,0 +1,102 @@
+﻿body {
+}
+
+#dataTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 90%;
+    border-collapse: collapse;
+    margin-left:5%; 
+    
+} 
+
+#dataTable td, #persons th {
+    font-size: 1em;
+    border: 1px solid #6495ED;
+    padding: 3px 7px 2px 7px;
+}
+
+#dataTable th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #4169E1;
+    color: #ffffff;
+}
+
+#dataTable tr.alt td {
+    color: #000000;
+    background-color: #EAF2D3;
+}
+
+#search {
+    float: right;
+    padding: 10px;
+    margin-right: 5%;
+}
+
+#paginationNavBar {
+    float: left;
+    margin-top: 10px;
+    margin-left:5%; 
+}
+
+#datePickerPosition{
+    float:left;
+    margin-top: 10px;
+    margin-left:4%; 
+}
+#datePickerSpan{
+    margin-right:3px;
+    margin-left:3px;
+}
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+    content: " \25B4\25BE";
+}
+table.sortable tbody {
+    counter-reset: sortabletablescope;
+}
+table.sortable thead tr::before {
+    content: "";
+    display: table-cell;
+}
+table.sortable tbody tr::before {
+    content: counter(sortabletablescope);
+    counter-increment: sortabletablescope;
+    display: table-cell;
+}
+table.sortable tbody tr:nth-child(2n) td {
+  background: #d7e7ff;
+}
+table.sortable tbody tr:nth-child(2n+1) td {
+  background: #f1f1f1;
+}
+
+/*!
+ * Start Bootstrap - Logo Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+@media(min-width:768px) {
+    body {
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}
